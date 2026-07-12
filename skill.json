@@ -1,0 +1,36 @@
+{
+  "name": "genpark-profound-ai-citation-optimizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Optimize copy structured schemas and citation anchors based on Profound citation algorithms.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "aeo",
+    "geo",
+    "profound",
+    "citations",
+    "ranking"
+  ],
+  "inputs": {
+    "text_copy": {
+      "type": "string",
+      "description": "Raw marketing description."
+    },
+    "statistics": {
+      "type": "array",
+      "description": "Numerical facts/claims to inject: [string]."
+    }
+  },
+  "outputs": {
+    "citation_optimized_text": {
+      "type": "string",
+      "description": "GEO optimized copywriting."
+    },
+    "citation_hints": {
+      "type": "array",
+      "description": "Actionable formatting anchors."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
